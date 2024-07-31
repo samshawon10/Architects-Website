@@ -12,6 +12,10 @@
 .display-flex{
     display: flex;
 }
+
+.text-primary{
+    color: rgb(255, 144, 14);
+}
 /* Dark 02 */
 .text-gray{
     color: rgb(66, 66, 66);
@@ -34,6 +38,13 @@
     font-size: 1.25rem;
     font-weight: 600;
     border: none;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main>section{
+    margin-top: 130px;
 }
 
 
@@ -88,10 +99,63 @@
     width: 100%;
 }
 
+/* Team and Features Related Styles */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 130px ;
+    max-width: 530px ;
+
+}
+
+.feature-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+
+}
+#Quick-list{
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
 /* Responsive Media Query */
 @media screen and (max-width:576px) {
-    .navbar, .nav-link {
+    .navbar, .nav-link, .teams {
         flex-direction: column;
     }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
     
+}
+
+
+
+/* Medium size device media query */
+@media screen and(min-width:576px) and (max-width:992px){
+    .teams{
+        flex-direction:column;
+    }
+    .our-features{
+        margin-left: 50px auto;
+    }
+
 }
