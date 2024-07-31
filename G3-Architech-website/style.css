@@ -54,13 +54,6 @@ main>section{
 
 
 
-/* Header Styles */
-
-
-
-
-
-
 /* Navbar related styles */
 .navbar{
     justify-content: space-between;
@@ -124,6 +117,45 @@ main>section{
 
 }
 
+
+/* Features section related styles.... */
+#feature-section-title{
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+}
+.Features{
+    gap: 140px;
+}
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.feature-architect img{
+    width: 100%;
+}
+
 /* Some facts related styles */
 .facts-container{
     display: grid;
@@ -179,7 +211,7 @@ main>section{
     .navbar, .nav-link, .teams {
         flex-direction: column;
     }
-    .team-img-container, .facts-container, .sponsor-companies{
+    .team-img-container, .facts-container, .sponsor-companies, .Features{
         grid-template-columns: repeat(1, 1fr);
     }
     .facts-container{
@@ -193,12 +225,16 @@ main>section{
     .our-features{
         margin-left: 20px;
     }
-    
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
 }
 
 /* Medium size device media query */
 @media screen and(min-width:576px) and (max-width:992px){
-    .teams{
+    .teams, .Features{
         flex-direction:column;
     }
     .our-features{
@@ -209,5 +245,28 @@ main>section{
         gap: 50px;
         justify-items: center;
     }
+
+}
+
+
+
+.footer-content{
+    width: auto;
+    height: 100px;
+    margin-bottom: 50px;
+    margin-right: 140px;
+    margin-left: 40px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 244, 231);
+}
+
+.footer-text{
+padding-top: 30px;
+width: 100%;
+text-align: center;
+font-size: 2rem;
 
 }
